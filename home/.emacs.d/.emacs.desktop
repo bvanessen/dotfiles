@@ -1,0 +1,775 @@
+;; -*- mode: emacs-lisp; coding: emacs-mule; -*-
+;; --------------------------------------------------------------------------
+;; Desktop File for Emacs
+;; --------------------------------------------------------------------------
+;; Created Wed Oct 30 22:03:27 2019
+;; Desktop file format version 208
+;; Emacs version 26.3
+
+;; Global section:
+(setq desktop-saved-frameset [frameset 1 (23994 27423 268321 0) (desktop . "208") "vanessen1@deimos" nil nil ((((minibuffer . t) (tty-type . "xterm-256color") (tty . "/dev/tty") (display-type . color) (background-mode . light) (foreground-color . "unspecified-fg") (background-color . "unspecified-bg") (font . "tty") (height . 65) (width . 236) (modeline . t) (unsplittable) (menu-bar-lines . 1) (frameset--id . "78D1-3E94-A2DE-0091") (frameset--mini t)) ((min-height . 8) (min-width . 20) (min-height-ignore . 4) (min-width-ignore . 4) (min-height-safe . 2) (min-width-safe . 4) (min-pixel-height . 8) (min-pixel-width . 20) (min-pixel-height-ignore . 4) (min-pixel-width-ignore . 4) (min-pixel-height-safe . 2) (min-pixel-width-safe . 4)) hc (pixel-width . 236) (pixel-height . 64) (total-width . 236) (total-height . 64) (normal-height . 1.0) (normal-width . 1.0) (combination-limit) (vc (pixel-width . 118) (pixel-height . 64) (total-width . 118) (total-height . 64) (normal-height . 1.0) (normal-width . 0.5) (combination-limit) (leaf (pixel-width . 118) (pixel-height . 32) (total-width . 118) (total-height . 32) (normal-height . 0.5) (normal-width . 1.0) (buffer "adam.hpp" (selected) (hscroll . 0) (fringes 0 0 nil) (margins nil) (scroll-bars nil 0 t nil 0 nil) (vscroll . 0) (dedicated) (point . 1405) (start . 785))) (leaf (last . t) (pixel-width . 118) (pixel-height . 32) (total-width . 118) (total-height . 32) (normal-height . 0.5) (normal-width . 1.0) (buffer "imcomm.cpp" (selected . t) (hscroll . 0) (fringes 0 0 nil) (margins nil) (scroll-bars nil 0 t nil 0 nil) (vscroll . 0) (dedicated) (point . 1713) (start . 1288)))) (vc (last . t) (pixel-width . 118) (pixel-height . 64) (total-width . 118) (total-height . 64) (normal-height . 1.0) (normal-width . 0.5) (combination-limit) (leaf (pixel-width . 118) (pixel-height . 32) (total-width . 118) (total-height . 32) (normal-height . 0.5) (normal-width . 1.0) (buffer "imcomm.hpp" (selected) (hscroll . 0) (fringes 0 0 nil) (margins nil) (scroll-bars nil 0 t nil 0 nil) (vscroll . 0) (dedicated) (point . 2131) (start . 1713))) (leaf (last . t) (pixel-width . 118) (pixel-height . 32) (total-width . 118) (total-height . 32) (normal-height . 0.5) (normal-width . 1.0) (buffer "imcomm.cpp" (selected) (hscroll . 0) (fringes 0 0 nil) (margins nil) (scroll-bars nil 0 t nil 0 nil) (vscroll . 0) (dedicated) (point . 6466) (start . 5833))))))])
+(setq desktop-missing-file-warning nil)
+(setq tags-file-name nil)
+(setq tags-table-list nil)
+(setq search-ring '("perturb<" "perturb(" "perturb" "perturb_adam" "perturb" "weight" "optimize_begin" "on_optim" "weights_string" "imcom" "im_comm" "imcom" "imco" "immco" "check_nan<tensordatatype" "proxy"))
+(setq regexp-search-ring nil)
+(setq register-alist '((113 . "typename TensorDataType") (102 . "  auto* dtl = dynamic_cast<data_type_layer<TensorDataType>*>(l);\n") (24 . "  auto* dtl = dynamic_cast<data_type_layer<TensorDataType>*>(l);\n") (100 . "<TensorDataType>") (101 . "this->") (119 . "TensorDataType") (97 . "template <typename TensorDataType>\n") (99 . "<DataType>")))
+(setq file-name-history '("~/.emacs.d/" "~/Research/DeepLearning/lbann.git/src/callbacks/imcomm.cpp" "~/Research/DeepLearning/lbann.git/include/lbann/callbacks/imcomm.hpp" "~/Research/DeepLearning/lbann.git/src/callbacks/perturb_adam.cpp" "~/Research/DeepLearning/lbann.git/include/lbann/callbacks/perturb_adam.hpp" "~/Research/DeepLearning/lbann.git/src/callbacks/debug.cpp" "~/Research/DeepLearning/lbann.git/include/lbann/callbacks/debug.hpp" "~/Research/DeepLearning/lbann.git/include/lbann/layers/io/input/generic_input_layer.hpp" "~/Research/DeepLearning/lbann.git/src/callbacks/" "~/Research/DeepLearning/lbann.git/src/callbacks/check_gradients.cpp" "~/Research/DeepLearning/lbann.git/include/lbann/callbacks/" "~/Research/DeepLearning/lbann.git/include/lbann/callbacks/check_gradients.hpp" "~/Research/DeepLearning/lbann.git/src/callbacks/" "~/Research/DeepLearning/lbann.git/src/models/model.cpp" "~/Research/DeepLearning/lbann.git/include/lbann/callbacks/" "~/Research/DeepLearning/lbann.git/include/lbann/callbacks/debug.hpp" "~/Research/DeepLearning/lbann.git/include/lbann/callbacks/check_nan.hpp" "~/Research/DeepLearning/lbann.git/include/lbann/callbacks/check_gradients.hpp" "~/Research/DeepLearning/lbann.git/src/callbacks/" "~/Research/DeepLearning/lbann.git/src/callbacks/check_nan.cpp" "~/Research/DeepLearning/lbann.git/include/lbann/callbacks/imcomm.hpp" "~/Research/DeepLearning/lbann.git/include/lbann/callbacks/check_nan.hpp" "~/Research/DeepLearning/lbann.git/include/lbann/callbacks/CMakeLists.txt" "~/Research/DeepLearning/lbann.git/include/lbann/callbacks/data_type_callback.hpp" "~/Research/DeepLearning/lbann.git/include/lbann/callbacks/check_small.hpp" "~/Research/DeepLearning/lbann.git/include/lbann/callbacks/callback.hpp" "~/Research/DeepLearning/lbann.git/src/proto/factories/callback_factory.cpp" "~/Research/DeepLearning/lbann.git/src/callbacks/check_small.cpp" "~/Research/DeepLearning/lbann.git/include/lbann/base.hpp" "~/Research/DeepLearning/lbann.git/include/lbann/weights/weights.hpp" "~/Research/DeepLearning/lbann.git/include/lbann/optimizers/optimizer.hpp" "~/Research/DeepLearning/lbann.git/src/callbacks/check_nan.cpp" "~/Research/DeepLearning/lbann.git/include/lbann/layers/data_type_layer.hpp" "~/Research/DeepLearning/lbann.git/src/callbacks/confusion_matrix.cpp" "~/Research/DeepLearning/lbann.git/src/optimizers/sgd.cu" "~/Research/DeepLearning/lbann.git/include/lbann/optimizers/sgd.hpp" "~/Research/DeepLearning/lbann.git/src/optimizers/sgd.cpp" "~/Research/DeepLearning/lbann.git/src/optimizers/rmsprop.cu" "~/Research/DeepLearning/lbann.git/include/lbann/optimizers/rmsprop.hpp" "~/Research/DeepLearning/lbann.git/src/optimizers/rmsprop.cpp" "~/Research/DeepLearning/lbann.git/src/optimizers/adam.cu" "~/Research/DeepLearning/lbann.git/src/optimizers/adagrad.cu" "~/Research/DeepLearning/lbann.git/include/lbann/optimizers/adagrad.hpp" "~/Research/DeepLearning/lbann.git/src/optimizers/adagrad.cpp" "~/Research/DeepLearning/lbann.git/src/optimizers/adam.cpp" "~/Research/DeepLearning/lbann.git/include/lbann/optimizers/adam.hpp" "~/Research/DeepLearning/lbann.git/src/optimizers/" "~/Research/DeepLearning/lbann.git/include/lbann/optimizers/" "~/Research/DeepLearning/lbann.git/src/optimizers/" "~/Research/DeepLearning/lbann.git/src/optimizers/hypergradient_adam.cpp" "~/Research/DeepLearning/lbann.git/include/lbann/optimizers/" "~/Research/DeepLearning/lbann.git/include/lbann/optimizers/adam.hpp" "~/Research/DeepLearning/lbann.git/include/lbann/optimizers/" "~/Research/DeepLearning/lbann.git/include/lbann/layers/learning/fully_connected.hpp" "~/Research/DeepLearning/lbann.git/include/lbann/optimizers/optimizer.hpp" "~/Research/DeepLearning/lbann.git/include/lbann/optimizers/hypergradient_adam.hpp" "~/Research/DeepLearning/lbann.git/src/proto/factories/layer_factory.cpp" "~/Research/DeepLearning/lbann.git/include/lbann/layers/activations/elu.hpp" "~/Research/DeepLearning/lbann.git/include/lbann/proto/factories.hpp" "~/Research/DeepLearning/lbann.git/src/callbacks/imcomm.cpp" "~/Research/DeepLearning/lbann.git/src/callbacks/debug.cpp" "~/Research/DeepLearning/lbann.git/include/lbann/callbacks/debug.hpp" "~/Research/DeepLearning/lbann.git/src/callbacks/" "~/Research/DeepLearning/lbann.git/src/callbacks/dump_minibatch_sample_indices.cpp" "~/Research/DeepLearning/lbann.git/src/callbacks/dump_outputs.cpp" "~/Research/DeepLearning/lbann.git/src/callbacks/" "~/Research/DeepLearning/lbann.git/src/callbacks/check_dataset.cpp" "~/Research/DeepLearning/lbann.git/include/lbann/callbacks/debug_io.hpp" "~/Research/DeepLearning/lbann.git/src/callbacks/debug_io.cpp" "~/Research/DeepLearning/lbann.git/src/callbacks/monitor_io.cpp" "~/Research/DeepLearning/lbann.git/include/lbann/objective_functions/objective_function.hpp" "~/Research/DeepLearning/lbann.git/include/lbann/models/directed_acyclic_graph.hpp"))
+
+;; Buffer section -- buffers listed in same order as in buffer list:
+(desktop-create-buffer 208
+  "/Users/vanessen1/Research/DeepLearning/lbann.git/src/callbacks/imcomm.cpp"
+  "imcomm.cpp"
+  'c++-mode
+  '(abbrev-mode)
+  1713
+  '(1678 nil)
+  nil
+  nil
+  '((buffer-display-time 23994 27407 636465 0) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (1469 6466 1468 1469 6674 4001 3991 2789 2779 6651 4606 4583 2120 2097 1))))
+
+(desktop-create-buffer 208
+  "/Users/vanessen1/Research/DeepLearning/lbann.git/include/lbann/optimizers/adam.hpp"
+  "adam.hpp"
+  'c++-mode
+  '(abbrev-mode)
+  1405
+  '(5013 nil)
+  nil
+  nil
+  '((buffer-display-time 23994 27407 636464 0) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (4997 1392 1357 4717 7319 4100 4084 2977 1695 1680 1615 5684 5684 5670))))
+
+(desktop-create-buffer 208
+  "/Users/vanessen1/Research/DeepLearning/lbann.git/include/lbann/callbacks/imcomm.hpp"
+  "imcomm.hpp"
+  'c++-mode
+  '(abbrev-mode)
+  2131
+  '(3600 nil)
+  nil
+  nil
+  '((buffer-display-time 23994 27407 636465 0) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (3584 2106 3339 1694 1619 2407 1))))
+
+(desktop-create-buffer 208
+  "/Users/vanessen1/Research/DeepLearning/lbann.git/src/callbacks/perturb_adam.cpp"
+  "perturb_adam.cpp"
+  'c++-mode
+  '(abbrev-mode)
+  3695
+  '(2355 nil)
+  nil
+  nil
+  '((buffer-display-time 23994 26997 110500 0) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (2353 2569 2671 2362 2362 2573 2580 2580 3695 3695 3848 3832 3134 3118 1549 1307))))
+
+(desktop-create-buffer 208
+  "/Users/vanessen1/Research/DeepLearning/lbann.git/include/lbann/callbacks/perturb_adam.hpp"
+  "perturb_adam.hpp"
+  'c++-mode
+  '(abbrev-mode)
+  4923
+  '(4907 nil)
+  nil
+  nil
+  '((buffer-display-time 23994 26973 833818 0) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (2067 4745 3773 2113 2032 4391))))
+
+(desktop-create-buffer 208
+  "/Users/vanessen1/Research/DeepLearning/lbann.git/src/optimizers/adam.cpp"
+  "adam.cpp"
+  'c++-mode
+  '(abbrev-mode)
+  4207
+  '(8760 nil)
+  nil
+  nil
+  '((buffer-display-time 23994 22971 229808 0) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (8754 8675 7964 7958 10978 10786 10786 10593 10593 10568 10029 9928 9884 9387 9288 9244))))
+
+(desktop-create-buffer 208
+  "/Users/vanessen1/Research/DeepLearning/lbann.git/include/lbann/layers/io/input/generic_input_layer.hpp"
+  "generic_input_layer.hpp"
+  'c++-mode
+  '(abbrev-mode)
+  7933
+  '(8703 nil)
+  nil
+  nil
+  '((buffer-display-time 23994 22661 490764 0) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (6353 4209 1580 1))))
+
+(desktop-create-buffer 208
+  "/Users/vanessen1/Research/DeepLearning/lbann.git/src/callbacks/debug.cpp"
+  "debug.cpp"
+  'c++-mode
+  '(abbrev-mode)
+  5996
+  '(7003 nil)
+  nil
+  nil
+  '((buffer-display-time 23994 22460 516772 0) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (6279 5923 5736 5587 5146 4703 4264 3823 3634 3512 3141 2801 2766 6907 6492 6138))))
+
+(desktop-create-buffer 208
+  "/Users/vanessen1/Research/DeepLearning/lbann.git/include/lbann/callbacks/debug.hpp"
+  "debug.hpp"
+  'c++-mode
+  '(abbrev-mode)
+  2983
+  '(2967 nil)
+  nil
+  nil
+  '((buffer-display-time 23994 22430 188943 0) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (2897 2925 1811 4038 1756 1756 1682 4038 4015 3877 1))))
+
+(desktop-create-buffer 208
+  "/Users/vanessen1/Research/DeepLearning/lbann.git/src/callbacks/check_gradients.cpp"
+  "check_gradients.cpp"
+  'c++-mode
+  '(abbrev-mode)
+  10605
+  '(10642 nil)
+  nil
+  nil
+  '((buffer-display-time 23994 22171 516440 0) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (3085 1 4938 2735 2328 7937 2329 5780 5742 5395 9957 5418 5395 3619 3603 3603))))
+
+(desktop-create-buffer 208
+  "/Users/vanessen1/Research/DeepLearning/lbann.git/include/lbann/callbacks/check_gradients.hpp"
+  "check_gradients.hpp"
+  'c++-mode
+  '(abbrev-mode)
+  3787
+  '(1823 nil)
+  nil
+  nil
+  '((buffer-display-time 23994 21943 64297 0) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (2837 2734 1923 1839))))
+
+(desktop-create-buffer 208
+  "/Users/vanessen1/Research/DeepLearning/lbann.git/include/lbann/base.hpp"
+  "base.hpp"
+  'c++-mode
+  '(abbrev-mode)
+  3338
+  '(3139 nil)
+  nil
+  nil
+  '((buffer-display-time 23994 21722 71598 0) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  nil
+  "callbacks"
+  'dired-mode
+  nil
+  294
+  '(nil nil)
+  t
+  '("/Users/vanessen1/Research/DeepLearning/lbann.git/src/callbacks/")
+  '((buffer-display-time 23994 21696 661891 0))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/Users/vanessen1/Research/DeepLearning/lbann.git/src/callbacks/save_images.cpp"
+  "save_images.cpp"
+  'c++-mode
+  '(abbrev-mode)
+  3650
+  '(2859 nil)
+  nil
+  nil
+  '((buffer-display-time 23994 21488 60579 0) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (2821))))
+
+(desktop-create-buffer 208
+  "/Users/vanessen1/Research/DeepLearning/lbann.git/src/callbacks/mixup.cpp"
+  "mixup.cpp"
+  'c++-mode
+  '(abbrev-mode)
+  3482
+  '(3467 nil)
+  nil
+  nil
+  '((buffer-display-time 23994 21476 585615 0) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/Users/vanessen1/Research/DeepLearning/lbann.git/src/callbacks/ltfb.cpp"
+  "ltfb.cpp"
+  'c++-mode
+  '(abbrev-mode)
+  10247
+  '(10232 nil)
+  nil
+  nil
+  '((buffer-display-time 23994 21475 315555 0) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/Users/vanessen1/Research/DeepLearning/lbann.git/src/callbacks/learning_rate.cpp"
+  "learning_rate.cpp"
+  'c++-mode
+  '(abbrev-mode)
+  10919
+  '(10676 nil)
+  nil
+  nil
+  '((buffer-display-time 23994 21464 686349 0) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (10904))))
+
+(desktop-create-buffer 208
+  "/Users/vanessen1/Research/DeepLearning/lbann.git/src/callbacks/confusion_matrix.cpp"
+  "confusion_matrix.cpp"
+  'c++-mode
+  '(abbrev-mode)
+  8065
+  '(4533 nil)
+  nil
+  nil
+  '((buffer-display-time 23994 21425 309491 0) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (4495 3794 1262))))
+
+(desktop-create-buffer 208
+  "/Users/vanessen1/Research/DeepLearning/lbann.git/src/callbacks/check_small.cpp"
+  "check_small.cpp"
+  'c++-mode
+  '(abbrev-mode)
+  3513
+  '(3498 nil)
+  nil
+  nil
+  '((buffer-display-time 23994 21417 644916 0) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (1531 1466 1509 1 3137 2715 2143 2088 3223 1344 3102 3779 3101 2612 2561 1977))))
+
+(desktop-create-buffer 208
+  "/Users/vanessen1/Research/DeepLearning/lbann.git/src/callbacks/check_init.cpp"
+  "check_init.cpp"
+  'c++-mode
+  '(abbrev-mode)
+  3175
+  '(2920 nil)
+  nil
+  nil
+  '((buffer-display-time 23994 21414 588317 0) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (2886))))
+
+(desktop-create-buffer 208
+  nil
+  "callbacks"
+  'dired-mode
+  nil
+  304
+  '(nil nil)
+  t
+  '("/Users/vanessen1/Research/DeepLearning/lbann.git/include/lbann/callbacks/")
+  '((buffer-display-time 23994 21398 961806 0))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/Users/vanessen1/Research/DeepLearning/lbann.git/include/lbann/callbacks/check_nan.hpp"
+  "check_nan.hpp"
+  'c++-mode
+  '(abbrev-mode)
+  1846
+  '(1830 nil)
+  nil
+  nil
+  '((buffer-display-time 23994 21276 328559 0) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (2523 1678 1600))))
+
+(desktop-create-buffer 208
+  "/Users/vanessen1/Research/DeepLearning/lbann.git/src/callbacks/check_nan.cpp"
+  "check_nan.cpp"
+  'c++-mode
+  '(abbrev-mode)
+  4541
+  '(2555 nil)
+  nil
+  nil
+  '((buffer-display-time 23994 21324 238978 0) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (5911 5757 4695 4541 7874 6797 5577 4332 7035 5860 4644 8038 8010 4327 3770 2889))))
+
+(desktop-create-buffer 208
+  "/Users/vanessen1/Research/DeepLearning/lbann.git/src/callbacks/summary.cpp"
+  "summary.cpp"
+  'c++-mode
+  '(abbrev-mode)
+  5242
+  '(5896 nil)
+  nil
+  nil
+  '((buffer-display-time 23994 20546 876210 0) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/Users/vanessen1/Research/DeepLearning/lbann.git/include/lbann/callbacks/data_type_callback.hpp"
+  "data_type_callback.hpp"
+  'c++-mode
+  '(abbrev-mode)
+  2092
+  '(1827 nil)
+  nil
+  nil
+  '((buffer-display-time 23994 20506 409120 0) (buffer-file-coding-system . utf-8-unix))
+  '((mark-ring (2012 1874 1826 1405 1405 1826 1826 1633 1612 1826 1612 1405 1386 1386 1515 1499))))
+
+(desktop-create-buffer 208
+  "/Users/vanessen1/Research/DeepLearning/lbann.git/src/models/model.cpp"
+  "model.cpp"
+  'c++-mode
+  '(abbrev-mode)
+  38421
+  '(38629 nil)
+  nil
+  nil
+  '((buffer-display-time 23994 20485 399035 0) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (38319 33365 38159 1))))
+
+(desktop-create-buffer 208
+  "/Users/vanessen1/Research/DeepLearning/lbann.git/include/lbann/callbacks/callback.hpp"
+  "callback.hpp"
+  'c++-mode
+  '(abbrev-mode)
+  5286
+  '(3051 nil)
+  nil
+  nil
+  '((buffer-display-time 23994 20434 77958 0) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (5488 5389 5488 2615 2074 2474 2094 2075 7258 1333 1241 1 2443))))
+
+(desktop-create-buffer 208
+  "/Users/vanessen1/Research/DeepLearning/lbann.git/include/lbann/callbacks/check_small.hpp"
+  "check_small.hpp"
+  'c++-mode
+  '(abbrev-mode)
+  2907
+  '(2396 nil)
+  nil
+  nil
+  '((buffer-display-time 23994 20289 506930 0) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (2267 2067 2051 2015 2650 2785 2356 2356 2864 1367 1367 1913 1898 1817 1817))))
+
+(desktop-create-buffer 208
+  "/Users/vanessen1/Research/DeepLearning/lbann.git/include/lbann/layers/data_type_layer.hpp"
+  "data_type_layer.hpp"
+  'c++-mode
+  '(abbrev-mode)
+  2628
+  '(1418 nil)
+  nil
+  nil
+  '((buffer-display-time 23994 19355 361903 0) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (1343 1))))
+
+(desktop-create-buffer 208
+  "/Users/vanessen1/Research/DeepLearning/lbann.git/include/lbann/layers/learning/fully_connected.hpp"
+  "fully_connected.hpp"
+  'c++-mode
+  '(abbrev-mode)
+  2155
+  '(2364 nil)
+  nil
+  nil
+  '((buffer-display-time 23994 19353 123689 0) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (2207))))
+
+(desktop-create-buffer 208
+  "/Users/vanessen1/Research/DeepLearning/lbann.git/include/lbann/callbacks/CMakeLists.txt"
+  "CMakeLists.txt"
+  'text-mode
+  '(auto-fill-mode)
+  260
+  '(nil nil)
+  nil
+  nil
+  '((buffer-display-time 23994 18050 520077 0) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/Users/vanessen1/Research/DeepLearning/lbann.git/src/proto/factories/callback_factory.cpp"
+  "callback_factory.cpp"
+  'c++-mode
+  '(abbrev-mode)
+  10006
+  '(nil nil)
+  nil
+  nil
+  '((buffer-display-time 23994 17559 958014 0) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/Users/vanessen1/Research/DeepLearning/lbann.git/include/lbann/weights/weights.hpp"
+  "weights.hpp"
+  'c++-mode
+  '(abbrev-mode)
+  2263
+  '(1 nil)
+  nil
+  nil
+  '((buffer-display-time 23994 17394 1358 0) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/Users/vanessen1/Research/DeepLearning/lbann.git/include/lbann/optimizers/optimizer.hpp"
+  "optimizer.hpp"
+  'c++-mode
+  '(abbrev-mode)
+  3493
+  '(10033 nil)
+  nil
+  nil
+  '((buffer-display-time 23994 17174 48931 0) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (3796 3796 3758 2789 4639 9860 9852 2754))))
+
+(desktop-create-buffer 208
+  "/Users/vanessen1/Research/DeepLearning/lbann.git/include/lbann/optimizers/sgd.hpp"
+  "sgd.hpp"
+  'c++-mode
+  '(abbrev-mode)
+  5057
+  '(5015 nil)
+  nil
+  nil
+  '((buffer-display-time 23994 17155 356941 0) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (5015 4338 3074 1571 1508 4083 4045 4190))))
+
+(desktop-create-buffer 208
+  "/Users/vanessen1/Research/DeepLearning/lbann.git/src/optimizers/sgd.cu"
+  "sgd.cu"
+  'c-mode
+  '(abbrev-mode)
+  5718
+  '(5580 nil)
+  nil
+  nil
+  '((buffer-display-time 23994 16974 133193 0) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (5344 4940 4292 4249 3123 2404 1257 4464 3670 3656))))
+
+(desktop-create-buffer 208
+  "/Users/vanessen1/Research/DeepLearning/lbann.git/src/optimizers/sgd.cpp"
+  "sgd.cpp"
+  'c++-mode
+  '(abbrev-mode)
+  3133
+  '(3117 nil)
+  nil
+  nil
+  '((buffer-display-time 23994 16846 618319 0) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (1904 1888 7222 7216 7137 6614 6608 1962 1946 8484 7977 7515 6897 6403 4149 3386))))
+
+(desktop-create-buffer 208
+  "/Users/vanessen1/Research/DeepLearning/lbann.git/include/lbann/optimizers/rmsprop.hpp"
+  "rmsprop.hpp"
+  'c++-mode
+  '(abbrev-mode)
+  3948
+  '(3938 nil)
+  nil
+  nil
+  '((buffer-display-time 23994 9569 302755 0) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (2069 1548 1481 2881 3106))))
+
+(desktop-create-buffer 208
+  "/Users/vanessen1/Research/DeepLearning/lbann.git/src/optimizers/rmsprop.cu"
+  "rmsprop.cu"
+  'c-mode
+  '(abbrev-mode)
+  3234
+  '(3091 nil)
+  nil
+  nil
+  '((buffer-display-time 23994 7480 577276 0) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (2545 2498 1293 2396 2382))))
+
+(desktop-create-buffer 208
+  "/Users/vanessen1/Research/DeepLearning/lbann.git/src/optimizers/rmsprop.cpp"
+  "rmsprop.cpp"
+  'c++-mode
+  '(abbrev-mode)
+  4131
+  '(4125 nil)
+  nil
+  nil
+  '((buffer-display-time 23994 7373 747884 0) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (1740 1724 1539 6672 5979 5549 5128 4714 3389 2764 2501 2423 2181 1912 1870 1621))))
+
+(desktop-create-buffer 208
+  "/Users/vanessen1/Research/DeepLearning/lbann.git/include/lbann/optimizers/adagrad.hpp"
+  "adagrad.hpp"
+  'c++-mode
+  '(abbrev-mode)
+  2150
+  '(2134 nil)
+  nil
+  nil
+  '((buffer-display-time 23994 7009 124608 0) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (3425 3415 1660 1593 2913 2875 2437 2431))))
+
+(desktop-create-buffer 208
+  "/Users/vanessen1/Research/DeepLearning/lbann.git/src/optimizers/adagrad.cu"
+  "adagrad.cu"
+  'c-mode
+  '(abbrev-mode)
+  2487
+  '(2404 nil)
+  nil
+  nil
+  '((buffer-display-time 23994 6991 932674 0) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (2357 2966 2950 1499 1261 1794 1780))))
+
+(desktop-create-buffer 208
+  "/Users/vanessen1/Research/DeepLearning/lbann.git/src/optimizers/adam.cu"
+  "adam.cu"
+  'c-mode
+  '(abbrev-mode)
+  4012
+  '(3885 nil)
+  nil
+  nil
+  '((buffer-display-time 23994 6978 662212 0) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (3841 5195 4947 3822 2793 1258 4244 4230))))
+
+(desktop-create-buffer 208
+  "/Users/vanessen1/Research/DeepLearning/lbann.git/src/optimizers/adagrad.cpp"
+  "adagrad.cpp"
+  'c++-mode
+  '(abbrev-mode)
+  1817
+  '(1801 nil)
+  nil
+  nil
+  '((buffer-display-time 23994 6850 509290 0) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (3959 3953 1494 1478 6173 5746 5322 4901 4487 3217 2592 2329 2251 6208 6198 6400))))
+
+(desktop-create-buffer 208
+  "/Users/vanessen1/Research/DeepLearning/lbann.git/include/lbann/optimizers/hypergradient_adam.hpp"
+  "hypergradient_adam.hpp"
+  'c++-mode
+  '(abbrev-mode)
+  4694
+  '(2569 nil)
+  nil
+  nil
+  '((buffer-display-time 23994 6501 726557 0) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (6581 6537 3718 6526 3078 4171 3114 3099 3099 2343 4605 4605 2337 1630 1551 1551))))
+
+(desktop-create-buffer 208
+  "/Users/vanessen1/Research/DeepLearning/lbann.git/src/optimizers/hypergradient_adam.cpp"
+  "hypergradient_adam.cpp"
+  'c++-mode
+  '(abbrev-mode)
+  10924
+  '(7867 nil)
+  nil
+  nil
+  '((buffer-display-time 23994 6474 593904 0) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (7861 7861 7921 7782 7782 6846 6852 6846 3785 3770 3770 3819 3804 3474 624 9726))))
+
+(desktop-create-buffer 208
+  nil
+  "optimizers"
+  'dired-mode
+  nil
+  647
+  '(nil nil)
+  t
+  '("/Users/vanessen1/Research/DeepLearning/lbann.git/include/lbann/optimizers/")
+  '((buffer-display-time 23994 3919 991976 0))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  nil
+  "optimizers"
+  'dired-mode
+  nil
+  295
+  '(nil nil)
+  t
+  '("/Users/vanessen1/Research/DeepLearning/lbann.git/src/optimizers/")
+  '((buffer-display-time 23992 38758 425541 0))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/Users/vanessen1/Research/DeepLearning/lbann.git/src/optimizers/optimizer.cpp"
+  "optimizer.cpp"
+  'c++-mode
+  '(abbrev-mode)
+  13882
+  '(1720 nil)
+  nil
+  nil
+  '((buffer-display-time 23992 38677 435963 0) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/Users/vanessen1/Research/DeepLearning/lbann.git/src/proto/factories/layer_factory.cpp"
+  "layer_factory.cpp"
+  'c++-mode
+  '(abbrev-mode)
+  1312
+  '(1 nil)
+  nil
+  nil
+  '((buffer-display-time 23992 38306 909334 0) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/Users/vanessen1/Research/DeepLearning/lbann.git/include/lbann/layers/activations/elu.hpp"
+  "elu.hpp"
+  'c++-mode
+  '(abbrev-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((buffer-display-time 23992 38202 227058 0) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/Users/vanessen1/Research/DeepLearning/lbann.git/src/callbacks/variable_minibatch.cpp"
+  "variable_minibatch.cpp"
+  'c++-mode
+  '(abbrev-mode)
+  3060
+  '(3050 nil)
+  nil
+  nil
+  '((buffer-display-time 23992 37733 664829 0) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (2098))))
+
+(desktop-create-buffer 208
+  "/Users/vanessen1/Research/DeepLearning/lbann.git/include/lbann/proto/factories.hpp"
+  "factories.hpp"
+  'c++-mode
+  '(abbrev-mode)
+  3883
+  '(3873 nil)
+  nil
+  nil
+  '((buffer-display-time 23992 37672 680149 0) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (3707 3697 1723 2978 2968 1))))
+
+(desktop-create-buffer 208
+  "/Users/vanessen1/Research/DeepLearning/lbann.git/src/callbacks/debug_io.cpp"
+  "debug_io.cpp"
+  'c++-mode
+  '(abbrev-mode)
+  3899
+  '(3855 nil)
+  nil
+  nil
+  '((buffer-display-time 23992 28059 338168 0) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (3887 6320 6310 2419 2409 1839 1829 3247 1))))
+
+(desktop-create-buffer 208
+  "/Users/vanessen1/Research/DeepLearning/lbann.git/src/callbacks/sync_layers.cpp"
+  "sync_layers.cpp"
+  'c++-mode
+  '(abbrev-mode)
+  1611
+  '(1601 nil)
+  nil
+  nil
+  '((buffer-display-time 23992 27999 550168 0) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/Users/vanessen1/Research/DeepLearning/lbann.git/src/callbacks/print_statistics.cpp"
+  "print_statistics.cpp"
+  'c++-mode
+  '(abbrev-mode)
+  2208
+  '(2198 nil)
+  nil
+  nil
+  '((buffer-display-time 23992 27992 93887 0) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/Users/vanessen1/Research/DeepLearning/lbann.git/src/callbacks/dump_minibatch_sample_indices.cpp"
+  "dump_minibatch_sample_indices.cpp"
+  'c++-mode
+  '(abbrev-mode)
+  1810
+  '(1800 nil)
+  nil
+  nil
+  '((buffer-display-time 23992 27982 914943 0) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (1768 1768 1))))
+
+(desktop-create-buffer 208
+  "/Users/vanessen1/Research/DeepLearning/lbann.git/src/callbacks/dump_outputs.cpp"
+  "dump_outputs.cpp"
+  'c++-mode
+  '(abbrev-mode)
+  5235
+  '(1 nil)
+  nil
+  nil
+  '((buffer-display-time 23992 27914 874209 0) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/Users/vanessen1/Research/DeepLearning/lbann.git/include/lbann/models/directed_acyclic_graph.hpp"
+  "directed_acyclic_graph.hpp"
+  'c++-mode
+  '(abbrev-mode)
+  1732
+  '(1722 nil)
+  nil
+  nil
+  '((buffer-display-time 23992 27758 221161 0) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (1672 1662 1))))
+
+(desktop-create-buffer 208
+  "/Users/vanessen1/Research/DeepLearning/lbann.git/src/callbacks/check_dataset.cpp"
+  "check_dataset.cpp"
+  'c++-mode
+  '(abbrev-mode)
+  3001
+  '(2991 nil)
+  nil
+  nil
+  '((buffer-display-time 23992 27746 611015 0) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (3111 3101 1526 1516 1))))
+
+(desktop-create-buffer 208
+  "/Users/vanessen1/Research/DeepLearning/lbann.git/include/lbann/callbacks/debug_io.hpp"
+  "debug_io.hpp"
+  'c++-mode
+  '(abbrev-mode)
+  3020
+  '(3010 nil)
+  nil
+  nil
+  '((buffer-display-time 23992 27589 113914 0) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (1))))
+
+(desktop-create-buffer 208
+  "/Users/vanessen1/Research/DeepLearning/lbann.git/src/callbacks/monitor_io.cpp"
+  "monitor_io.cpp"
+  'c++-mode
+  '(abbrev-mode)
+  2645
+  '(2635 nil)
+  nil
+  nil
+  '((buffer-display-time 23992 27537 796788 0) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (1840 1830 1))))
+
+(desktop-create-buffer 208
+  "/Users/vanessen1/Research/DeepLearning/lbann.git/include/lbann/objective_functions/objective_function.hpp"
+  "objective_function.hpp"
+  'c++-mode
+  '(abbrev-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((buffer-display-time 23992 26814 840411 0) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring nil)))
+

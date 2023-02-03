@@ -1,0 +1,8 @@
+(load "setup-packages.el")
+;;(load "setup-ivy.el")
+(load "setup-company.el")
+(load "setup-flycheck.el")
+(load "setup-yasnippet.el")
+;;(load "setup-magit.el")
+(load "setup-projectile.el")
+(load "setup-lsp-mode.el")

@@ -1,0 +1,212 @@
+# Shortcuts for Brian Van Essen
+
+# Brian Van Essen Alias
+alias temacs='/usr/bin/emacs'
+alias h='history'
+logScript () { script "$@"; }
+
+alias psme='ps -ef | grep vanessen'
+
+#lf () { ls -F "$@"; }
+#la () { ls -a "$@"; }
+#ll () { ls -l "$@"; }
+
+alias lf='ls -F'
+alias la='ls -a'
+alias ll='ls -l'
+alias lla='ls -al'
+
+alias   xtg='xterm -sb -sl 40960 -bg black -fg green'
+alias   xty='xterm -sb -sl 40960 -bg black -fg yellow'
+
+#ciscovpn () { /System/Library/StartupItems/CiscoVPN/CiscoVPN "$@"; }
+#debugvpn () { /usr/local/bin/ipseclog "$@"; }
+
+openemacs () { /Applications/Emacs.app/Contents/MacOS/Emacs "$@"; }
+
+# CVS check status of local directory only (recursively)
+alias csl='cvs status | grep Status | grep -v "Up-to-date"'
+
+# CVS status of all files (recursively)
+alias csa='cvs status | grep Status'
+
+print () { enscript -2 -DDuplex:true -G -r "$@"; }
+println () { enscript -2 -DDuplex:true -G -r -C "$@"; }
+
+ediff () { diff -c -C 5 --ignore-space-change --ignore-blank-lines "$@"; }
+
+rd () { rdesktop -g 1024x768 -a 24 "$@"; }
+rdl () { rdesktop -g 1240x800 -a 24 "$@"; }
+
+alias cvsRapid='export CVSROOT=:ext:vanessen@tebo.cs.washington.edu:/projects/lis/rapid/cvsrep'
+#alias cvs557='export CVSROOT=:ext:vanessen@tebo.cs.washington.edu:/homes/gws/vanessen/cse557/project2/cvsrep'
+alias cvs551='export CVSROOT=:ext:vanessen@tebo.cs.washington.edu:/homes/gws/vanessen/cse551/project/cvsroot'
+
+# Open Aquamacs from the command line
+alias aquamacs='open -a /Applications/Emacs/Aquamacs.app/'
+#alias aquamacs='open -a /Applications/Emacs/Aquamacs\ Emacs.app/'
+
+# Start OSXvnc from the command line
+alias osxvnc='/Applications/OSXvnc.app/osxvnc-server -localhost -rendezvous no'
+
+# Setup a ssh tunnel for vnc traffic
+tunnelvnc () { ssh -C -L5900:127.0.0.1:5900 "$@"; }
+
+# Setup a ssh tunnel for OS X vnc screen sharing (use a special local port to avoid warning about local screensharing)
+tunnelScreenSharing () { ssh -C -L 1202:127.0.0.1:5900 $@; }
+
+# Setup a ssh tunnel for FlexLM traffic - set /etc/hosts localhost to bohr.ee.washinton.edu
+tunnelflex () { ssh -g -L5280:bohr.ee.washington.edu:5280 -L35722:bohr.ee.washington.edu:35722 "$@"; }
+
+tunnelIMAP () { sudo ssh -p80 -g -lvanessen -L993:vanessen.mail.cs.washington.edu:993 "$@"; }
+
+sshSOCKs () { ssh -p80 -D 9999 panda.dnsalias.org; }
+
+ssh80 () { ssh -p80 panda.dnsalias.org; }
+
+# Use diff to create a patch
+alias make_patch='diff -Naur'
+
+# Setup the path for the FPL2008 Mosaic experiment
+#alias fpl08='export PATH=${sb}/Mosaic/experiments/FPL2008/toolchain/bin:${PATH}'
+
+alias unzipall='find . -name "*.zip" -exec unzip {} \;'
+
+#alias gnuplot='/Users/vanessen/usr/bin/gnuplot'
+
+alias electric='java -Xmx1024m -classpath electric-8.08a.jar:mosaicArchGenPlugin-8.08a.jar com.sun.electric.Launcher':.
+
+alias more='less'
+
+# Replace the unix locate util with the spotlight version
+alias locate='mdfind -name'
+
+# Querying the aiport subsystem from the command line
+# airport -I
+# airport -s
+alias airport='/System/Library/PrivateFrameworks/Apple80211.framework/Versions/Current/Resources/airport'
+
+#unalias rm
+
+# See what is running where in condor
+
+alias cq='condor_q -g -format "%4s " ClusterID -format "%.18s " User  -format "%5d " RemoteWallClockTime/60 -format "%8sKB " ImageSize_RAW -format "%s " JobStatus -format "%.15s " RemoteHost -format "%s " DAGNodeName -format "\n" owner'
+alias cql='condor_q -g -format "%4s " ClusterID -format "%.18s " User  -format "%5d " RemoteWallClockTime/60 -format "%8sKB " ImageSize_RAW -format "%s " JobStatus -format "%.15s " RemoteHost -format "%s " DAGNodeName -format "%.80s" Out -format "\n" owner'
+alias cqll='condor_q -g -format "%4s " ClusterID -format "%.18s " User  -format "%5d " RemoteWallClockTime/60 -format "%8sKB " ImageSize_RAW -format "%s " JobStatus -format "%.15s " RemoteHost -format "%s " DAGNodeName -format "%.256s" Out -format "\n" owner'
+#RESOURCE_GROUP
+#alias cq='condor_q -g -format "%s " ClusterID -format "%.18s " User -format "%d, " RemoteWallClockTime/86400 -format "%.2d:" RemoteWallClockTime/3600 -format "%.2d " RemoteWallClockTime/60 -format "%8sKB " ImageSize_RAW -format "%s " JobStatus -format "%.12s " RemoteHost -format "%s " DAGNodeName -format "\n" owner'
+
+# Since you can't nest single quotes, break out of the single quotes, include an escaped single quote and then keep going
+alias cs='condor_status -constraint '\''Arch=="X86_64" && (Memory > 1536)'\'
+
+# Set the max memory allocation on all of my jobs
+alias ce='condor_qedit vanessen JobMaxMem 8192'
+
+#condor_qedit vanessen Requirements '((Machine != "vlsi011.ee.washington.edu") && (Machine != "vlsi012.ee.washington.edu") && (Machine != "vlsi013.ee.washington.edu") && (Arch == "X86_64") && (Memory > 4000) && (LoadAvg < 0.300000)) && (((MY.RESOURCE_GROUP =?= TARGET.JOB_GROUP) || (TARGET.JOB_GROUP =?= UNDEFINED))) && (OpSys == "LINUX") && (Disk >= DiskUsage) && (TARGET.FileSystemDomain == MY.FileSystemDomain)'
+
+# Managing condor cleanup
+# grep -v "Error" foo | sed -e 's/\S*condor_run.out.\([0-9]*\)/\1/' | xargs condor_rm
+# find . -name "condor_run.out.*" -exec grep "Cannot find \`include" {} \; -print | sed -e 's/condor_run.out.\([0-9]*\)/\1/'
+# cq | grep SEED[45] | sed -e 's/^\([0-9]*\).*/\1/' | xargs condor_rm
+
+alias crm_vsim='cq | grep Vsim | sed -e '\''s/^\([0-9 ]*\).*/\1/'\'' | xargs condor_rm'
+
+alias chold_spr='cq | grep "1 SPR" | sed -e '\''s/^\([0-9 ]*\).*/\1/'\'' | xargs condor_hold'
+
+# list the power reports in chronological order
+alias pr='ls -lt power_report.*'
+
+alias unzipall='find . -name "*.zip" -exec unzip {} \;'
+
+# Sed foo
+# find . -name "*.pl" -exec sed -i.bak 's/\(.*distEstMethod.*\"\)External\(\".*\)/\1router.ExternalDistanceFunctionPlugin\2/' {} \;
+# find . -name "*.pl" -exec sed -i.bak 's/\(.*SimAnnealPlacerProperties.randomSeed.*\[\)\"1\", \"2\", \"3\"\]\(.*\)/\1\"1\", \"2\", \"3\", \"4\", \"5\"\]\2/' {} \;
+# find . -name "*.pl" -exec sed -i.bak 's/\(.*\)ExternalMosaicWriter\(.*\)/\1ExternalConfigWriter\2/' {} \;
+
+alias cleanApps='find . -name _generated_files -exec rm -r {} \;'
+
+alias csub='condor_submit CONDOR_SUBMIT_FILE'
+
+alias cout='ls -t1 condor_run.out.* | head -1 | xargs less'
+
+alias dfCheckError='find . -name "condor_run.out.*" -maxdepth 2 -exec grep -A20 "Error" {} \; -print'
+
+alias dfCheckWarn='find . -name "condor_run.out.*" -maxdepth 2 -exec grep -A10 "WARNING" {} \; -print'
+
+scpLaptop () { scp -r "$@" ticonderoga.cs.washington.edu:; }
+
+# Mark directories, sockects, symbolic links and executables.
+# alias	ls	'ls -F'
+# Another possible alias:
+# alias	lf	'ls -F'
+
+# Quick way to logout.
+# alias 	. 	'logout'
+
+# Reset TERM and TERMCAP.
+#alias	ts	'set noglob; eval `tset -s \!*`; unset noglob'
+
+# Reset TERMCAP to current window size.
+#alias	rs	'set noglob; eval `resize`; unset noglob'
+
+# Easy way to read mail with Gnu emacs.
+# alias	rmail	'emacs -f rmail'
+
+# Print out dvi files.
+# alias	lprdvi	'lpr -d'
+
+# Have lpr send mail to you when a job is completed.
+# alias	lpr	'lpr -m'
+
+# Set the title bar of an xterm to something.
+# The string contains '<ECS>]0;\!*<Ctrl-G>'
+# consequently, if you cat this file, the title bar will change to '\!*'.
+# alias	xtitle	'echo -n "]0;\!*"'
+
+# CVS check status of local directory only (recursively)
+alias csl='cvs status | grep Status | grep -v "Up-to-date"'
+
+# CVS status of all files (recursively)
+alias csa='cvs status | grep Status'
+
+print () { enscript -2 -DDuplex:true -G -r "$@"; }
+
+ediff () { diff -c -C 5 --ignore-space-change --ignore-blank-lines "$@"; }
+
+rd () { rdesktop -g 1024x768 -a 24 "$@"; }
+
+# Use chgrpsh to muck with groups
+# chgrpsh [ [+|-]<group-name> ] [command string]
+
+safeweb () { javaws http://llnl.tucloud.com/dt/kavizaclient.jnlp; }
+
+# LLNL RealVNC setup
+czvnc () { ssh -Snone -f -l vanessen -L 5999:localhost:5999 czvnc.llnl.gov sleep 180; }
+
+brew_clang() { export PATH="/usr/local/opt/llvm/bin:$PATH"; }
+brew_clang8() { export PATH="/usr/local/opt/llvm@8/bin:$PATH"; }
+brew_clang7() { export PATH="/usr/local/opt/llvm@7/bin:$PATH"; }
+brew_clang4() { export PATH="/usr/local/opt/llvm@4/bin:$PATH"; }
+
+enable_fast_tm() { sudo sysctl debug.lowpri_throttle_enabled=0; }
+
+enable_slow_tm() { sudo sysctl debug.lowpri_throttle_enabled=1; }
+
+brew_gcc8() { export PATH="/usr/local/opt/gcc@8/bin:$PATH"; }
+brew_gcc7() { export PATH="/usr/local/opt/gcc@7/bin:$PATH"; }
+brew_gcc6() { export PATH="/usr/local/opt/gcc@6/bin:$PATH"; }
+
+rmd () {
+  pandoc $1 | lynx -stdin
+}
+
+disable_conda() { conda config --set auto_activate_base false; }
+enable_conda() { conda config --set auto_activate_base true; }
+
+cmake_dl () { DYLD_LIBRARY_PATH=/System/Library/Frameworks/ImageIO.framework/Versions/A/Resources/ cmake "$@"; }
+
+restart_ssh () { sudo launchctl stop org.openbsd.ssh-agent; sudo launchctl start org.openbsd.ssh-agent; }
+
+alias ssh_fugaku='ssh a04168@fugaku.r-ccs.riken.jp'
+
+restart_calendar () { launchctl stop com.apple.CalendarAgent; launchctl start com.apple.CalendarAgent; }

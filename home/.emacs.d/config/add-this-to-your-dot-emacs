@@ -1,0 +1,33 @@
+(unless (or (string-match "^lassen" (system-name))
+            (string-match "^ray" (system-name)))
+  (add-to-list 'load-path "~/.emacs.d/config")
+  (load "setup-all-things-lsp.el"))
+
+;; This should be in setup-all-things-lsp.el
+(load "setup-packages.el")
+(load "setup-ivy.el")
+(load "setup-company.el")
+(load "setup-flycheck.el")
+(load "setup-yasnippet.el")
+(load "setup-magit.el")
+(load "setup-projectile.el")
+(load "setup-lsp-mode.el")
+
+
+;; Getting started
+;; Start the LSP server (if it didn't already)
+M-x lsp
+
+cmake -DCMAKE_EXPORT_COMPILE_COMMANDS=ON .
+
+cd <build>
+cp compile_commands.json ~/lbann.git/compile_commands.json
+cp lbann_config.hpp ~/lbann.git/include/lbann_config.hpp
+
+;; (setq lsp-keymap-prefix "C-c l")
+
+;; So, for example, to go to the declaration of a symbol, you would do
+;; C-c l g d
+
+
+https://emacs-lsp.github.io/lsp-mode/

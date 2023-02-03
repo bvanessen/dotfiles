@@ -1,0 +1,61 @@
+# Set up specific info for personal use
+
+#source /sw/bin/init.sh
+# These aliases were copied from the Fink project and found in /sw/bin/init.csh
+# they ensure that only unique variables are added to a path
+
+# define append_path and prepend_path to add directory paths, e.g. PATH, MANPATH.
+# add to end of path
+append_path()
+{
+  if ! eval test -z \"\${$1##\*:$2:\*}\" -o -z \"\${$1%%\*:$2}\" -o -z \"\${$1##$2:\*}\" -o -z \"\${$1##$2}\" ; then
+    eval "$1=\$$1:$2"
+  fi
+}
+
+# add to front of path
+prepend_path()
+{
+  if ! eval test -z \"\${$1##\*:$2:\*}\" -o -z \"\${$1%%\*:$2}\" -o -z \"\${$1##$2:\*}\" -o -z \"\${$1##$2}\" ; then
+    eval "$1=$2:\$$1"
+  fi
+}
+
+if [ -z "$PATH" ]; then
+    PATH=/Users/vanessen1/bin:.:/usr/share/smlnj/bin:/usr/local/bin:/usr/share/scheme/bin
+#    PATH=/Users/vanessen1/bin:/Users/vanessen1/usr/bin:.:/usr/share/smlnj/bin:/usr/local/bin:/Developer/usr/bin:/Developer/Tools:/usr/share/scheme/bin
+else
+    append_path PATH /Users/vanessen1/bin:.:/usr/share/smlnj/bin:/usr/share/scheme/bin
+    prepend_path PATH /usr/local/bin
+fi
+export PATH
+
+if [ -z "$MANPATH" ]; then
+    MANPATH=/usr/local/man
+else
+    append_path MANPATH /usr/local/man
+fi
+export MANPATH
+
+if [ -z "$INFOPATH" ]; then
+    INFOPATH=/usr/local/info
+else
+    append_path INFOPATH /usr/local/info
+fi
+export INFOPATH
+
+# Add /usr/local/lib
+if [ -z "$LD_LIBRARY_PATH" ]; then
+    LD_LIBRARY_PATH=/usr/local/lib
+else
+    append_path LD_LIBRARY_PATH /usr/local/lib
+fi
+export LD_LIBRARY_PATH
+
+# Add /usr/local/lib
+# if [ -z "$DYLD_LIBRARY_PATH" ]; then
+#     DYLD_LIBRARY_PATH=/usr/local/lib
+# else
+#     append_path DYLD_LIBRARY_PATH /usr/local/lib
+# fi
+# export DYLD_LIBRARY_PATH

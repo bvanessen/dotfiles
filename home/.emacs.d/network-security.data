@@ -1,0 +1,4 @@
+(
+ (:id "sha1:85b31c268009209a8d3c5387033b219264f7e62b" :fingerprints ("sha1:b0:7e:34:51:33:1c:bb:19:f6:3a:fb:1d:6d:54:14:d1:ae:25:0f:63") :host "melpa.org:443" :conditions (:unknown-ca :invalid :renegotiation-info-ext :verify-cert))
+ (:id "sha1:6d4eb958390599243ba9f5035cb671fa8dd6a93a" :fingerprints ("sha1:b0:7e:34:51:33:1c:bb:19:f6:3a:fb:1d:6d:54:14:d1:ae:25:0f:63") :host "elpa.gnu.org:443" :conditions (:unknown-ca :invalid :renegotiation-info-ext :verify-cert))
+)

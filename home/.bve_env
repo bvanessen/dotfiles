@@ -1,0 +1,30 @@
+export TIPS=/Users/vanessen/Documents/ComputerNotes
+
+# Setup rsync to use ssh by default
+export RSYNC_RSH=SSH
+
+# Setup rsh to use ssh by default
+export CVS_RSH=SSH
+
+export CVSEDITOR=emacs
+
+# Setup the env variables for personal projects
+export HIPTOP=/Users/vanessen/Engineering/hiptop
+
+# Development for the Danger SideKick / HipTop
+#export JAVA_HOME=/usr
+export JAVA_HOME=/Library/Java/Home
+export DANGER_HOME=$HIPTOP/hiptop-sdk
+
+# Personal Repository
+#alias cvsENG='export CVSROOT=/Users/vanessen/Engineering/repository'
+
+# Personal Repository
+#alias cvsJabRef='export CVSROOT=:ext:vanessen@cvs.sourceforge.net:/cvsroot/jabref'
+
+if [ -z "$PERL5LIB" ]; then
+  PERL5LIB=/Users/vanessen1/perl/System/Library/Perl/5.8.6:/Users/vanessen1/perl/lib/perl5:/Users/vanessen1/perl/lib/perl5/site_perl
+else
+  prepend_path PERL5LIB /Users/vanessen1/perl/System/Library/Perl/5.8.6:/Users/vanessen1/perl/lib/perl5:/Users/vanessen1/perl/lib/perl5/site_perl
+fi
+export PERL5LIB

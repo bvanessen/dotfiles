@@ -1,0 +1,26 @@
+packages:
+  all:
+#    compiler: [gcc, intel, pgi, clang, xl, nag]
+    providers:
+      blas: [veclibfort]
+      lapack: [veclibfort]
+  cmake:
+    variants: ~openssl ~ncurses
+  hwloc:
+    variants: ~pci ~libxml2
+
+#packages:
+#     protobuf:
+#         paths:
+#             protobuf@3.4.1: /usr/local/Cellar/protobuf/3.4.1
+#         version: [3.4.1]
+#         buildable: False
+# packages:
+#     openblas:
+#         paths:
+#             openblas@0.2.20: /usr/local/Cellar/openblas/0.2.20
+#         buildable: False
+#     all:
+#         providers:
+#             blas: [netlib-lapack]
+#             lapack: [netlib-lapack]

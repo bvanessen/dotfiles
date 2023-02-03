@@ -1,0 +1,1 @@
+("~/Research/DeepLearning/lbann.git/" "~/Research/spack.git/" "~/Research/vanessen.svn/" "~/Research/DeepLearning/CI/lbann_to_mirror_to_ci.git/" "~/Research/DeepLearning/Project Management/AICoE/aicoe_papers.gitx/" "~/Research/DeepLearning/Project Management/icddps-paper-2022.git/")
