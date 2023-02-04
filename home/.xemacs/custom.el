@@ -1,0 +1,15 @@
+(custom-set-variables
+ '(verilog-auto-newline nil)
+ '(paren-mode (quote sexp) nil (paren))
+ '(verilog-indent-lists nil)
+ '(fill-column 80)
+ '(verilog-tab-to-comment nil)
+ '(verilog-indent-declaration-macros t)
+ '(specman-auto-newline nil)
+ '(line-number-mode t)
+ '(verilog-compiler "verilog ")
+ '(user-mail-address "vanessen@cmu.edu")
+ '(query-user-mail-address nil)
+ '(font-lock-mode t nil (font-lock)))
+(custom-set-faces
+ '(default ((t (:background "LightYellow" :family "Fixed"))) t))
