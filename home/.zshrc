@@ -1,6 +1,9 @@
 #------------------------------------------------------------------------
 # Spack environment and paths
 #------------------------------------------------------------------------
+export SPACK_ROOT=/Users/vanessen1/Research/spack.git
+. $SPACK_ROOT/share/spack/setup-env.sh
+
 export SPACK_SKIP_MODULES=1
 source_if_exists $HOME/src/spack/share/spack/setup-env.sh
 default_env=~/src/spack/var/spack/environments/default/.spack-env/view
