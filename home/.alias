@@ -210,3 +210,7 @@ restart_ssh () { sudo launchctl stop org.openbsd.ssh-agent; sudo launchctl start
 alias ssh_fugaku='ssh a04168@fugaku.r-ccs.riken.jp'
 
 restart_calendar () { launchctl stop com.apple.CalendarAgent; launchctl start com.apple.CalendarAgent; }
+
+git_fetch_upstream_pr() { git fetch upstream pull/"$@"/head:pr-"$@"; }
+
+# zeropad_jpeg() { rename 's/\d+/sprintf("%04d",$&)/e' *.jpeg; }

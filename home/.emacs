@@ -191,3 +191,42 @@ or \\[eval-expression], or \\[execute-extended-command]: "))
     (add-to-list 'load-path "~/.emacs.d/config")
     (load "setup-all-things-lsp.el"))
    )
+
+;; Inspired by M-x edit-kbd-macro and https://superuser.com/q/176627.
+(defun my-dired-do-execute (keys &optional arg)
+  "Execute a command in all marked files.
+If an error occurs, execution in other files is not affected.
+(Notably, this allows to run keyboard macros until there is an error.)
+
+At the prompt, type any bound key sequence, or `\\[execute-extended-command]'
+to choose a command by its name, or `\\[eval-expression]' to enter a Lisp expression.
+
+The prefix ARG, if given, is passed on to the chosen command.
+"
+  (interactive
+   (list (read-key-sequence (substitute-command-keys "Key sequence to execute, \
+or \\[eval-expression], or \\[execute-extended-command]: "))
+         current-prefix-arg))
+  (when keys
+    (let ((cmd (if (arrayp keys) (key-binding keys) keys))
+          exp)
+      (cond ((eq cmd 'execute-extended-command)
+             (setq cmd (read-command "Name of command to execute: "))
+             (if (string-equal cmd "")
+                 (error "No command name given")))
+            ((eq cmd 'eval-expression)
+             (setq exp (read--expression "Eval in selected files: "))
+             (setq cmd nil))
+            ((null cmd)
+             (error "Key sequence %s is not defined" (key-description keys))))
+      (mapc (lambda (filename)
+              (save-selected-window
+                (find-file-other-window filename)
+                (setq current-prefix-arg arg)
+                (condition-case-unless-debug err
+                    (if cmd
+                        (call-interactively cmd)
+                      (message "Result in file %s:" filename)
+                      (eval-expression exp))
+                  (error (message "In file %s: %S" filename err)))))
+            (dired-get-marked-files)))))
