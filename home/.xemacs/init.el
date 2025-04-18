@@ -104,8 +104,12 @@
  (replace-string "\r\n" "\n"))
 
 ;; Turn on Auto Fill mode automatically in Text mode and related modes
-(add-hook 'text-mode-hook
-  '(lambda () (auto-fill-mode 1)))
+;; (add-hook 'text-mode-hook
+;;   '(lambda () (auto-fill-mode 1)))
+
+;; Don't use auto-fill-mode anymore, use visual line wrap
+(add-hook 'text-mode-hook 'visual-line-mode)
+(add-hook 'text-mode-hook 'turn-off-auto-fill)
 
 ;; Set extension for Bluespec files to load Haskell mode
 (setq auto-mode-alist
@@ -143,6 +147,9 @@
 
 ;; Setup Macah files to use c syntax highlighting
 (setq auto-mode-alist (append '(("\\.macah$"    . c-mode)) auto-mode-alist))
+
+;; Add Aspell's path to exec-path in your init.el file:
+(add-to-list 'exec-path "/opt/homebrew/bin/")
 
 ;; Setup Flyspell to auto load as a minor mode for tex editing
 ;;(add-hook 'LaTeX-mode-hook 'flyspell-mode)
