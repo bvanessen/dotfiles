@@ -1,17 +1,17 @@
 #------------------------------------------------------------------------
 # Spack environment and paths
 #------------------------------------------------------------------------
-export SPACK_ROOT=/Users/vanessen1/Research/spack.git
-. $SPACK_ROOT/share/spack/setup-env.sh
+# export SPACK_ROOT=/Users/vanessen1/Research/spack.git
+# . $SPACK_ROOT/share/spack/setup-env.sh
 
-export SPACK_SKIP_MODULES=1
-source_if_exists $HOME/src/spack/share/spack/setup-env.sh
-default_env=~/src/spack/var/spack/environments/default/.spack-env/view
+# export SPACK_SKIP_MODULES=1
+# source_if_exists $HOME/src/spack/share/spack/setup-env.sh
+# default_env=~/src/spack/var/spack/environments/default/.spack-env/view
 
 #export SPACK_PYTHON=/usr/bin/python
-if [ -x ${default_env}/bin/python ]; then
-    export SPACK_PYTHON=${default_env}/bin/python
-fi
+# if [ -x ${default_env}/bin/python ]; then
+#     export SPACK_PYTHON=${default_env}/bin/python
+# fi
 
 pathadd /usr/sbin
 pathadd /usr/global/etc/bin     # LC's sbin tools
@@ -24,8 +24,8 @@ pathadd /usr/local/opt/ruby/bin  # homebrew ruby
 #------------------------------------------------------------------------
 # Go
 #------------------------------------------------------------------------
-export GOPATH="${HOME}/src/go"
-pathadd "${GOPATH}/bin"
+# export GOPATH="${HOME}/src/go"
+# pathadd "${GOPATH}/bin"
 
 #------------------------------------------------------------------------
 # Editors
