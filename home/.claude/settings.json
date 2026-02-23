@@ -4,9 +4,12 @@
     "CLAUDE_CODE_DISABLE_NONESSENTIAL_TRAFFIC": "1",
     "ANTHROPIC_BASE_URL": "https://livai-api.llnl.gov",
     "ANTHROPIC_AUTH_TOKEN": "FIXME",
-    "ANTHROPIC_DEFAULT_SONNET_MODEL": "claude-sonnet-4.5",
+    "ANTHROPIC_DEFAULT_SONNET_MODEL": "claude-sonnet-4.6",
     "ANTHROPIC_DEFAULT_HAIKU_MODEL": "claude-haiku-3",
-    "CLAUDE_CODE_SUBAGENT_MODEL": "claude-sonnet-4.5"
+    "CLAUDE_CODE_SUBAGENT_MODEL": "claude-sonnet-4.6"
+    "CLAUDE_CODE_ENABLE_TELEMETRY": "0",
+    "DISABLE_TELEMETRY": "1",
+    "CLAUDE_CODE_ATTRIBUTION_HEADER": "0",
   },
   "permissions": {
     "allow": [
