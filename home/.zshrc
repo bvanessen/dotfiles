@@ -16,6 +16,7 @@
 pathadd /usr/sbin
 pathadd /usr/global/etc/bin     # LC's sbin tools
 pathadd $default_env/bin
+pathadd $HOME/.dotfiles/bin
 pathadd $HOME/bin
 pathadd $HOME/bin/scripts
 pathadd $HOME/bin/eor-request
@@ -215,3 +216,4 @@ alias docker-down='eval $(docker-machine env) && docker-machine stop'
 export GPG_TTY=$(tty)
 
 source ~/.api_keys
+source ~/.livai-api-key.txt

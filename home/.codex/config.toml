@@ -1,0 +1,64 @@
+# https://myconfluence.llnl.gov/pages/viewpage.action?pageId=612845288&spaceKey=BOWTIE&title=Codex
+
+# https://developers.openai.com/codex/config-reference
+
+profile = "livai"
+sandbox_mode = "read-only"
+approval_policy = "on-request"
+allow_login_shell = false # optional hardening: disallow login shells for shell-based tools
+
+[profiles.livai]
+check_for_update_on_startup = false
+model = "gpt-5.2"
+model_provider = "livai"
+model_reasoning_effort = "medium"
+personality = "pragmatic"
+review_model = "gpt-5.2"
+web_search = "disabled"
+
+[analytics]
+enabled = false
+
+[feedback]
+enabled = false
+
+[features]
+#use_linux_sandbox_bwrap = true
+
+[model_providers.livai]
+name = "LivAI"
+base_url = "https://livai-api.llnl.gov/v1"
+env_key = "LIVAI_API_KEY"
+query_params = { "api-version" = "preview" }
+wire_api = "responses"
+
+[model_providers.llamame]
+name = "LLameMe"
+base_url = "https://llamame.apps.rzapps.llnl.gov/v1"
+env_key = "LLAMAME_API_KEY"
+
+[model_providers.local]
+name = "Local"
+base_url = "http://localhost:8013/v1"
+
+[notice]
+"hide_gpt-5.1-codex-max_migration_prompt" = true
+
+[notice.model_migrations]
+"gpt-5.2" = "gpt-5.3-codex"
+
+
+
+# For squid proxy, commend out everything in /opt/homebrew/etc/squid.conf  and put the following:
+
+# Turn on wrap
+
+# Copy as text
+# # Custom config
+# http_port 127.0.0.1:3128
+
+# # allow outbound only to livai api
+# acl allowed_sites dstdomain livai-api.llnl.gov
+
+# http_access allow allowed_sites
+# http_access deny all
