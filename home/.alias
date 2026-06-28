@@ -214,3 +214,7 @@ restart_calendar () { launchctl stop com.apple.CalendarAgent; launchctl start co
 git_fetch_upstream_pr() { git fetch upstream pull/"$@"/head:pr-"$@"; }
 
 # zeropad_jpeg() { rename 's/\d+/sprintf("%04d",$&)/e' *.jpeg; }
+
+ollama_serve() { OLLAMA_FLASH_ATTENTION="1" OLLAMA_KV_CACHE_TYPE="q8_0" /opt/homebrew/opt/ollama/bin/ollama serve; }
+
+squid_launch() { squid -f ~/.squid.conf --foreground; }

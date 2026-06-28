@@ -2,19 +2,19 @@
 
 # https://developers.openai.com/codex/config-reference
 
-profile = "livai"
+#profile = "livai"
 sandbox_mode = "read-only"
 approval_policy = "on-request"
 allow_login_shell = false # optional hardening: disallow login shells for shell-based tools
 
-[profiles.livai]
-check_for_update_on_startup = false
-model = "gpt-5.2"
-model_provider = "livai"
-model_reasoning_effort = "medium"
-personality = "pragmatic"
-review_model = "gpt-5.2"
-web_search = "disabled"
+#[profiles.livai]
+# check_for_update_on_startup = false
+# model = "gpt-5.2"
+# model_provider = "livai"
+# model_reasoning_effort = "medium"
+# personality = "pragmatic"
+# review_model = "gpt-5.2"
+# web_search = "disabled"
 
 [analytics]
 enabled = false
