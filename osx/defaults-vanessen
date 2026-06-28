@@ -1,3 +1,9 @@
+#!/bin/sh
+
+###############################################################################
+# Trackpad, mouse, keyboard                                                   #
+###############################################################################
+
 defaults write -g com.apple.swipescrolldirection -bool FALSE
 defaults read -g AppleShowScrollBars
 # Always show scrollbars
