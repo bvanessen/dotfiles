@@ -1,3 +1,15 @@
+# BEGIN keybridge shell integration: added by keybridge
+if [ -d "/Users/vanessen1/.keybridge/bin" ]; then # added by keybridge
+    case ":$PATH:" in # added by keybridge
+        *:"/Users/vanessen1/.keybridge/bin":*) ;; # added by keybridge
+        *) PATH="/Users/vanessen1/.keybridge/bin":$PATH ;; # added by keybridge
+    esac # added by keybridge
+fi # added by keybridge
+if [ -f "/Users/vanessen1/.keybridge/data/completion/keybridge.zsh" ]; then # added by keybridge
+    . "/Users/vanessen1/.keybridge/data/completion/keybridge.zsh" # added by keybridge
+fi # added by keybridge
+# END keybridge shell integration: added by keybridge
+
 #------------------------------------------------------------------------
 # Spack environment and paths
 #------------------------------------------------------------------------
@@ -216,4 +228,11 @@ alias docker-down='eval $(docker-machine env) && docker-machine stop'
 export GPG_TTY=$(tty)
 
 source ~/.api_keys
-source ~/.livai-api-key.txt
+export LIVAI_API_KEY=$(cat ~/.livai-api-key-cui.txt)
+#source ~/.livai-api-key.txt
+
+# Additional config for https://keybridge.llnl.gov
+fpath=($HOME/.zsh/completions $fpath)
+autoload -Uz compinit && compinit
+export PATH="/Users/vanessen1/.local/bin:$PATH"
+export PATH="/Users/vanessen1/.cargo/bin:$PATH"
